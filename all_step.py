@@ -40,6 +40,8 @@ alphabet = 'abcdefghijklmnopqrstuvwxyz'
 text = 'Hello World'
 shift = 3
 alphabet = 'abcdefghijklmnopqrstuvwxyz'
-for i in text:
-    print(i) #the whole chars in hello world get printed out e.g H e l l 
+for char in text:
+    index = alphabet.find(char) #step 26 we added this to find the index of the character in the alphabet
+    print(char, index)  # step 25 the whole chars in hello world get printed out e.g H e l l 
 #the loop vairable was i before but we renamed it to something reasonable 'char'    
+#step 27 we added another argument in the  print function 'index' caue the print function can accept a lot of argument by speparting it with a comma
